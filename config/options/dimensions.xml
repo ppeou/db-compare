@@ -1,0 +1,15 @@
+<application>
+  <component name="DimensionService">
+    <location key="#com.intellij.execution.impl.EditConfigurationsDialog.-1920.0.1920.1080" x="-1490" y="200" />
+    <location key="com.intellij.database.view.ui.DbObjectDialog.0.0.1920.1080" x="742" y="376" />
+    <location key="SettingsEditor.0.0.1920.1080" x="394" y="186" />
+    <location key="ExecutionTargetDialog.0.0.1920.1080" x="717" y="280" />
+    <location key="#com.intellij.execution.impl.EditConfigurationsDialog.0.0.1920.1080" x="772" y="165" />
+    <location key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1.0.0.1920.1080" x="428" y="246" />
+    <size key="com.intellij.database.view.ui.DbObjectDialog.0.0.1920.1080" width="448" height="327" />
+    <size key="GridCell.Tab.0.left.0.0.1920.1080" width="1788" height="292" />
+    <size key="GridCell.Tab.0.center.0.0.1920.1080" width="1788" height="292" />
+    <size key="GridCell.Tab.0.right.0.0.1920.1080" width="1788" height="292" />
+    <size key="GridCell.Tab.0.bottom.0.0.1920.1080" width="1788" height="292" />
+  </component>
+</application>
