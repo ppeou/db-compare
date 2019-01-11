@@ -1,0 +1,12 @@
+------------------
+| CONTRAINT TYPE |
+------------------
+C - Check constraint on a table
+P - Primary key
+U - Unique key
+R - Referential integrity
+V - With check option, on a view
+O - With read only, on a view
+H - Hash expression
+F - Constraint that involves a REF column
+S - Supplemental logging
