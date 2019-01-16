@@ -13,6 +13,9 @@ create tablespace equ_tbs_idx
   autoextend on next 10m maxsize 2048m
   extent management local;
 
+ALTER USER EQU_DEV QUOTA 10M ON EQU_TBS_IDX;
+ALTER USER EQU_TST QUOTA 10M ON EQU_TBS_IDX;
+
 
 /* Temporary tablespace */
 create temporary tablespace equ_tbs_temp
