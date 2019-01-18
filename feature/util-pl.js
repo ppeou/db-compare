@@ -31,6 +31,16 @@
       sql: `SELECT SEQUENCE_OWNER, SEQUENCE_NAME, MIN_VALUE, TO_CHAR(MAX_VALUE) AS MAX_VALUE, INCREMENT_BY, CYCLE_FLAG, ORDER_FLAG, CACHE_SIZE, LAST_NUMBER 
             FROM ALL_SEQUENCES WHERE SEQUENCE_OWNER='[[owner]]' ORDER BY SEQUENCE_NAME`,
     },
+    {
+      outputfile: 'VIEWS.csv',
+      sql: `SELECT OWNER, VIEW_NAME, TEXT FROM ALL_VIEWS 
+            WHERE OWNER='[[owner]]' ORDER BY VIEW_NAME`,
+    },
+    {
+      outputfile: 'SOURCES.csv',
+      sql: `SELECT T.OWNER, T.NAME, T.TYPE, TO_CLOB(DBMS_METADATA.GET_DDL(T.TYPE, T.NAME)) AS TEXT
+            FROM (SELECT DISTINCT OWNER, NAME, TYPE FROM ALL_SOURCE WHERE OWNER='[[owner]]') T ORDER BY T.NAME, T.TYPE`,
+    },
   ];
 
   _m.exports = {
@@ -39,6 +49,10 @@
 
 })(module);
 
-
+/*{
+  outputfile: '.csv',
+    sql: `
+            WHERE OWNER='[[owner]]' ORDER BY VIEW_NAME`,
+},*/
 ;
 
