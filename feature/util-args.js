@@ -10,7 +10,7 @@
     let parsed = str;
     Object.keys(obj).forEach((key) => {
       const value = obj[key]
-      parsed = parsed.replace('[[' + key + ']]', value);
+      parsed = parsed.replace(new RegExp(`\\[\\[${key}\\]\\]`, 'g'), value);
     });
     return parsed;
   }

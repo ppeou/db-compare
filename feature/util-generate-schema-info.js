@@ -1,5 +1,5 @@
-//node util-generate-schema-info.js.js url=localhost/xe username=EQU_DEV password=equ_dev_pwd outputDir=../output/dev
-//node util-generate-schema-info.js.js url=localhost/xe username=EQU_TST password=equ_tst_pwd outputDir=../output/tst
+//node util-generate-schema-info.js url=localhost/xe username=EQU_DEV password=equ_dev_pwd outputDir=../output/dev
+//node util-generate-schema-info.js url=localhost/xe username=EQU_TST password=equ_tst_pwd outputDir=../output/tst
 
 const {args, fillTemplate} = require('./util-args.js');
 const {getDb} = require('./util-db.js');
