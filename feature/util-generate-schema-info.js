@@ -19,9 +19,9 @@ const {url, username, password, outputDir} = args;
   const db = await getDb({url, username, password});
 
   PLSQL.forEach(i => {
-    const {sql, outputfile} = i;
+    const {sql, outputfile, transformer} = i;
     const _output = path.resolve(outputDir,outputfile);
     const asql = fillTemplate(sql, {owner: username});
-    executeQuery(db, asql, _output);
+    executeQuery(db, asql, _output, transformer);
   });
 })();
